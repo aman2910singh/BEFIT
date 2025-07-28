@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Dashboard</title>
+  <link rel="stylesheet" href="style3.css" />
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
+</head>
+
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h1 style="color: crimson;">BEFIt <samp style="color: aliceblue;"> ☰ </samp></h1>
+      <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+          <hr>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#"><h2 style="color: aliceblue;">Home</h2></a></li>
+          <li><a href="#"><h2 style="color: aliceblue;">Workouts</h2></a></li>
+          <li><a href="#"><h2 style="color: aliceblue;">Nutrition</h2></a></li>
+          <li><a href="#"><h2 style="color: aliceblue;">Progress</h2></a></li>
+          <li><a href="#"><h2 style="color: aliceblue;">Settings</h2></a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Welcome Back</h1>
+        <p>Here’s your fitness summary today.</p>
+      </header>
+
+      <section class="cards">
+        <div class="card" id="calories">
+          <h2>Calories Burned</h2>
+          <h4>520 kcal<h4>
+        </div>
+        <div class="card" id="steps">
+          <h2>Steps</h2>
+          <h4>7,834</h4>
+        </div>
+        <div class="card" id="water">
+          <h2>Water Intake</h2>
+          <h4>1.8 L</h4>
+        </div>
+        <div class="card" id="sleep">
+          <h2>Sleep</h2>
+          <h4>6.5 hrs</h4>
+        </div>
+      </section>
+
+      <section class="chart">
+        <h2>Weekly Progress</h2>
+        <canvas id="progressChart"></canvas>
+      </section>
+    </main>
+    <section class="weight-check">
+      <h1>Check Ideal Weight</h1>
+      <label for="heightInput">
+        <h2>Enter your height (in cm):</h2>
+      </label>
+      <input type="number" id="heightInput" placeholder="e.g., 170" />
+      <button onclick="calculateIdealWeight()"><b>Calculate</b></button>
+      <h2 id="weightResult"></h2>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="Gym3.js"></script>
+</body>
+
+</html>

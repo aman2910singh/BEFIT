@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <h1>BEFIT</h1>
+        </div>
+        <ul>
+            <li>
+                <a href="#home" id="homes" onclick="home()"> HOME </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="home">
+<div class="form-modal">
+    
+    <div class="form-toggle">
+        <button id="login-toggle" onclick="toggleLogin()">log in</button>
+        <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+    </div>
+
+    <div id="login-form">
+        <form>
+            <input type="text" placeholder="Enter email or username" id="email"/>
+            <input type="password" placeholder="Enter password" id="password"/>
+            
+            <button type="button" class="btn login" onclick="login()">login</button>
+            
+            <p><a href="javascript:void(0)">Forgotten account</a></p>
+            <hr/>
+
+        </form>
+    </div>
+
+    <div id="signup-form">
+        <form>
+            <input type="email" placeholder="Enter your email" id="email"/>
+            <input type="text" placeholder="Choose username" id="name"/>
+            <input type="password" placeholder="Create password" id="password"/>
+            
+            <button type="button" class="btn signup" onclick="signup()">create account</button>
+            
+            <p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p>
+            <hr/>
+           
+        </form>
+    </div>
+
+</div>
+    </div>
+<script src="Gym2.js"></script>
+</body>
+</html>

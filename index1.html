@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <h1>BEFIT</h1>
+        </div>
+        <ul>
+            <li>
+                <a href="#home" id="homes" onclick="home()"> HOME </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="home">
+    <!-- Login Form -->
+    <form>
+        <fieldset>
+            <legend>User Personal Information</legend>
+
+            <label for="name">Enter your full name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" name="pass" required />
+
+            <label for="confirmPassword">Confirm your password:</label>
+            <input type="password" id="confirmPassword" name="confirmPass" required />
+
+            <label>Enter your gender:</label>
+            <div class="gender-group">
+                <label for="male"><input type="radio" name="gender" value="male" id="male" required /> Male</label>
+                <label for="female"><input type="radio" name="gender" value="female" id="female" /> Female</label>
+                <label for="others"><input type="radio" name="gender" value="others" id="others" /> Others</label>
+            </div>
+
+            <label for="dob">Enter your Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required />
+
+            <label for="height">Enter your Height (in cm):</label>
+            <input type="number" id="height" name="height" min="0" required />
+
+            <label for="weight">Enter your Weight (in kg):</label>
+            <input type="number" id="weight" name="weight" min="0" required />
+
+            <label for="address">Enter your Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <div class="login">
+                <button type="submit"><b>Submit</b></button>
+                <div class="signUp">
+                    <a href="index2.html"><b>Sign Up</b></a>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>

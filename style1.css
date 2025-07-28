@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+    color: #222;
+    font-size: 18px;
+    max-width: 1440px;
+    margin: 0 auto;
+    /* Remove this: */
+    /* padding-top: 120px; */
+}
+
+
+.home {
+    background-image: url('image/men.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    padding-top: 140px; /* Add this to push content below nav */
+}
+
+
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1440px;
+    background: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.logo h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav ul li {
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+
+
+
+form {
+    background: rgba(255, 255, 255, 0.1); /* semi-transparent white */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px); /* blur background behind form */
+    -webkit-backdrop-filter: blur(10px); /* for Safari */
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.gender-group {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.login button {
+    padding: 12px 24px;
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color:#ff1a1a;
+}
+
+.signUp {
+    margin-top: 15px;
+}
+
+.signUp a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #007BFF;
+}
+
+.signUp a:hover {
+    text-decoration: underline;
+}

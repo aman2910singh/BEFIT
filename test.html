@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workout Suggestions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff4d4d;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+      color: #ff4d4d;
+    }
+
+    .workout-grid {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 20px;
+      padding-bottom: 10px;
+    }
+
+    .workout-card {
+      flex: 0 0 300px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .workout-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .workout-card iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+
+    .workout-card .info {
+      padding: 15px;
+    }
+
+    .workout-card .info h3 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+      color: #222;
+    }
+
+    .workout-card .info p {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .weekly-plan {
+      margin-top: 50px;
+    }
+
+    .weekly-plan h2 {
+      text-align: center;
+      color: #ff4d4d;
+      margin-bottom: 20px;
+    }
+
+    .weekly-plan ul {
+      list-style-type: none;
+      padding: 0;
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .weekly-plan li {
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+      font-size: 1.1em;
+    }
+
+    .weekly-plan li:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Workout Suggestions</h1>
+    <p>Get moving with these guided workouts!</p>
+  </header>
+
+  <div class="container">
+    <div class="section-title">Choose Your Workout</div>
+    <div class="workout-grid">
+
+      <div class="workout-card">
+        <iframe src="https://www.youtube.com/embed/1919eTCoESo" allowfullscreen></iframe>
+        <div class="info">
+          <h3>Full Body Workout</h3>
+          <p>A 15-minute full body routine, no equipment needed.</p>
+        </div>
+      </div>
+
+      <div class="workout-card">
+        <iframe src="https://www.youtube.com/embed/j6C6W_1tqMY" allowfullscreen></iframe>
+        <div class="info">
+          <h3>Abs Workout</h3>
+          <p>Strengthen your core with this 10-minute abs burner.</p>
+        </div>
+      </div>
+
+      <div class="workout-card">
+        <iframe src="https://www.youtube.com/embed/ml6cT4AZdqI" allowfullscreen></iframe>
+        <div class="info">
+          <h3>HIIT Cardio</h3>
+          <p>High-Intensity Interval Training for fat burning.</p>
+        </div>
+      </div>
+
+      <div class="workout-card">
+        <iframe src="https://www.youtube.com/embed/fLexgOxsZu0" allowfullscreen></iframe>
+        <div class="info">
+          <h3>Dance Fitness</h3>
+          <p>Fun and energetic dance workout to stay active!</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="weekly-plan">
+      <h2>Weekly Workout Plan</h2>
+      <ul>
+        <li><strong>Monday:</strong> Chest & Triceps</li>
+        <li><strong>Tuesday:</strong> Legs</li>
+        <li><strong>Wednesday:</strong> Back & Biceps</li>
+        <li><strong>Thursday:</strong> Shoulders</li>
+        <li><strong>Friday:</strong> Core & Abs</li>
+        <li><strong>Saturday:</strong> Full Body / HIIT</li>
+        <li><strong>Sunday:</strong> Rest or Light Stretching</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
